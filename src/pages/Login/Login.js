@@ -1,6 +1,9 @@
 import React from "react";
-import "./Login.css";
+import { useNavigate } from "react-router-dom";
+import "./Login.scss";
+
 const Login = () => {
+  const navigate = useNavigate();
   return (
     <div id="bgBoder">
       <h1 id="westargramLogo">westargram</h1>
@@ -11,7 +14,9 @@ const Login = () => {
           className="id"
         />
         <input type="password" placeholder="비밀번호" className="password" />
-        <button className="button">로그인</button>
+        <button className="button" onClick={() => navigate("/main")}>
+          로그인
+        </button>
 
         <a href="https://www.instagram.com/accounts/password/reset/">
           비밀번호를 잊으셨나요?
@@ -22,6 +27,7 @@ const Login = () => {
 };
 
 export default Login;
+
 // const loginId = document.querySelector(".id");
 // const loginPw = document.querySelector(".password");
 // const loginBtn = document.querySelector(".button");
