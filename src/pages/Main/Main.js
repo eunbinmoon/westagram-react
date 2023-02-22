@@ -1,5 +1,5 @@
-import React from "react";
-import "./Main.scss";
+import React from 'react';
+import './Main.scss';
 
 const Main = () => {
   return (
@@ -32,7 +32,7 @@ const Main = () => {
                 className="profilePhoto"
               />
               <span className="daramId">
-                &nbsp;&nbsp;<b>172_daram</b>{" "}
+                &nbsp;&nbsp;<b>172_daram</b>{' '}
               </span>
               <i className="fa-solid fa-ellipsis"></i>
             </div>
@@ -67,14 +67,14 @@ const Main = () => {
             </div>
             <span>
               <strong>&nbsp;&nbsp;172_daram</strong>10번 이상 본 나의 띵작...
-              <span style={{ color: "rgb(151, 150, 150)" }}>
+              <span style={{ color: 'rgb(151, 150, 150)' }}>
                 &nbsp;&nbsp;더 보기
               </span>
               <br />
               &nbsp;&nbsp;<strong>eunsong_s2</strong> 말모 스타이즈본이즈러브
             </span>
             <br />
-            <p className="minBefore" style={{ color: "rgb(151, 150, 150)" }}>
+            <p className="minBefore" style={{ color: 'rgb(151, 150, 150)' }}>
               &nbsp;&nbsp;54분 전
             </p>
           </div>
@@ -98,7 +98,7 @@ const Main = () => {
           </div>
           <div className="friendStory">
             <div className="friendStorytext">
-              <p className="storyText" style={{ color: "rgb(151, 150, 150)" }}>
+              <p className="storyText" style={{ color: 'rgb(151, 150, 150)' }}>
                 <b>스토리</b>
               </p>
               <p className="allStoryView">
@@ -118,7 +118,7 @@ const Main = () => {
                 </p>
                 <p
                   className="main-rightfriendNameTimeP-1"
-                  style={{ color: "rgb(151, 150, 150)" }}
+                  style={{ color: 'rgb(151, 150, 150)' }}
                 >
                   <b>2시간 전</b>
                 </p>
@@ -136,7 +136,7 @@ const Main = () => {
                 </p>
                 <p
                   className="main-rightfriendNameTimeP-1"
-                  style={{ color: "rgb(151, 150, 150)" }}
+                  style={{ color: 'rgb(151, 150, 150)' }}
                 >
                   <b>2시간 전</b>
                 </p>
@@ -154,7 +154,7 @@ const Main = () => {
                 </p>
                 <p
                   className="main-rightfriendNameTimeP-1"
-                  style={{ color: "rgb(151, 150, 150)" }}
+                  style={{ color: 'rgb(151, 150, 150)' }}
                 >
                   <b>2시간 전</b>
                 </p>
@@ -172,7 +172,7 @@ const Main = () => {
                 </p>
                 <p
                   className="main-rightfriendNameTimeP-1"
-                  style={{ color: "rgb(151, 150, 150)" }}
+                  style={{ color: 'rgb(151, 150, 150)' }}
                 >
                   <b>2시간 전</b>
                 </p>
@@ -181,7 +181,7 @@ const Main = () => {
           </div>
           <div className="recomandFriendAll">
             <div className="recomandFriend">
-              <p className="storyText" style={{ color: "rgb(151, 150, 150)" }}>
+              <p className="storyText" style={{ color: 'rgb(151, 150, 150)' }}>
                 <b> 회원님을 위한 추천</b>
               </p>
               <p className="allStoryView">
@@ -199,7 +199,7 @@ const Main = () => {
                 <p>
                   <b>eun_bin</b>
                 </p>
-                <p style={{ color: "rgb(151, 150, 150)" }}>
+                <p style={{ color: 'rgb(151, 150, 150)' }}>
                   <b>mooneunbin님 외 12...</b>
                 </p>
               </div>
@@ -215,7 +215,7 @@ const Main = () => {
                 <p>
                   <b>eun_bin</b>
                 </p>
-                <p style={{ color: "rgb(151, 150, 150)" }}>
+                <p style={{ color: 'rgb(151, 150, 150)' }}>
                   <b>mooneunbin님 외 12...</b>
                 </p>
               </div>
@@ -231,14 +231,14 @@ const Main = () => {
                 <p>
                   <b>eun_bin</b>
                 </p>
-                <p style={{ color: "rgb(151, 150, 150)" }}>
+                <p style={{ color: 'rgb(151, 150, 150)' }}>
                   <b>mooneunbin님 외 12...</b>
                 </p>
               </div>
               <button class="followButton">팔로우</button>
             </div>
           </div>
-          <footer style={{ color: "rgb(151, 150, 150)" }}>
+          <footer style={{ color: 'rgb(151, 150, 150)' }}>
             &nbsp; wnstagram 정보·지원·홍보 센터·API·
             <br />
             &nbsp; &nbsp;&nbsp; 채용정보·개인정보처리방침·약관·

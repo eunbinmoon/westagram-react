@@ -1,6 +1,6 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import "./Login.scss";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Login.scss';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ const Login = () => {
             className="id"
           />
           <input type="password" placeholder="비밀번호" className="password" />
-          <button className="button" onClick={() => navigate("/main")}>
+          <button className="button" onClick={() => navigate('/main')}>
             로그인
           </button>
 
