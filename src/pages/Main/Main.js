@@ -3,15 +3,18 @@ import "./Main.scss";
 
 const Main = () => {
   return (
-    <>
+    <div className="main">
       <nav>
         <div className="nav-leftTap">
           <i className="fa-brands fa-instagram"></i>
           <span className="westagramtext">| westagram </span>
         </div>
         <div className="nav-centerTap">
-          <i className="fa-solid fa-magnifying-glass"></i>
           <input className="search" placeholder="검색" />
+          <i
+            className="fa-solid fa-magnifying-glass nav-centerTapGlass"
+            id="searchIcon"
+          ></i>
         </div>
         <div className="nav-rightTap">
           <i className="fa-regular fa-compass"></i>
@@ -19,7 +22,7 @@ const Main = () => {
           <i className="fa-regular fa-user"></i>
         </div>
       </nav>
-      <div className="main">
+      <div className="mainPage">
         <div className="feeds">
           <div className="article">
             <div className="profile">
@@ -246,7 +249,7 @@ const Main = () => {
           </footer>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

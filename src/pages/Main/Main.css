@@ -1,0 +1,211 @@
+body {
+  background-color: rgb(243, 243, 243);
+  margin: 0px 60px;
+}
+body p {
+  margin: 0px 5px;
+}
+body i {
+  font-size: 25px;
+  font-weight: lighter;
+  width: 30px;
+}
+body nav {
+  display: flex;
+  align-items: center;
+  border: 2px solid rgb(216, 216, 216);
+  background-color: white;
+  width: 1000px;
+  height: 70px;
+}
+body nav .nav-leftTap,
+body nav .nav-centerTap {
+  flex: none;
+}
+body nav .westagramtext {
+  font-size: 30px;
+  font-family: "Lobster", cursive;
+}
+body nav .fa-magnifying-glass {
+  font-size: 20px;
+  color: black;
+}
+body nav .search {
+  background-color: rgb(243, 243, 243);
+  border: 2px solid rgb(216, 216, 216);
+  height: 30px;
+  text-align: center;
+  margin-left: 190px;
+  outline: none;
+}
+body nav .nav-rightTap {
+  margin-left: auto;
+}
+body nav .fa-compass,
+body nav .fa-heart,
+body nav .fa-user {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+body .mainPage {
+  display: flex;
+}
+body .mainPage .feeds {
+  background-color: white;
+  margin-top: 50px;
+  border: 2px solid rgb(216, 216, 216);
+}
+body .mainPage .feeds .article {
+  border-bottom: 2px solid rgb(216, 216, 216);
+}
+body .mainPage .feeds .article .profile {
+  display: flex;
+  align-items: center;
+}
+body .mainPage .feeds .article .profile .daramId {
+  font-weight: bold;
+}
+body .mainPage .feeds .article .profile .fa-ellipsis {
+  margin-left: auto;
+  margin-right: 10px;
+}
+body .mainPage .feeds .article .profile .profilePhoto {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+body .mainPage .feeds .article .profile .profilePhoto,
+body .mainPage .feeds .article .profile .daramId {
+  flex: none;
+  margin-right: 10px;
+}
+body .mainPage .feeds .article .profilePhoto {
+  margin: 8px 0px 8px 12px;
+}
+body .mainPage .feeds .article .pictureUnderTap {
+  display: flex;
+}
+body .mainPage .feeds .article .pictureUnderTap .pictureUnderTapLeftSide {
+  flex: none;
+}
+body .mainPage .feeds .article .pictureUnderTap .pictureUnderTapLeftSide .likeThisFeed {
+  background-color: white;
+  border: none;
+  padding: 0;
+}
+body .mainPage .feeds .article .pictureUnderTap .pictureUnderTapLeftSide .feedsave {
+  margin-left: auto;
+}
+body .mainPage .feeds .article .pictureUnderTap .howManyLike {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+body .mainPage .feeds .article .pictureUnderTap .howManyLike .howManyLikePicture {
+  width: 20px;
+  margin: auto 5px auto 10px;
+}
+body .mainPage .feeds .article .pictureUnderTap .minBefore {
+  margin-bottom: 10px;
+}
+body .mainPage .feeds .article .howManyLike {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+body .mainPage .feeds .article .howManyLike .howManyLikePicture {
+  width: 20px;
+  margin: auto 5px auto 10px;
+}
+body .mainPage .feeds .comment {
+  position: relative;
+  width: 450px;
+  height: 35px;
+  border: 0;
+  padding-left: 15px;
+  outline: none;
+}
+body .mainPage .feeds .commentbutton {
+  position: absolute;
+  width: 50px;
+  height: 35px;
+  border: 0;
+  outline: 0;
+  background-color: white;
+  color: rgba(24, 24, 248, 0.6);
+  font-size: 15px;
+}
+body .mainPage .main-right .main-rightMyProfile {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+body .mainPage .main-right .main-rightMyProfile .main-rightMyProfileImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin-left: 12px;
+}
+body .mainPage .main-right .main-rightfriendPic {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+body .mainPage .main-right .friendStory,
+body .mainPage .main-right .recomandFriendAll {
+  border: 2px solid rgb(216, 216, 216);
+  background-color: white;
+  width: 330px;
+  height: 250px;
+  margin: 8px 0px 15px 25px;
+  overflow: hidden;
+}
+body .mainPage .main-right .friendStory .friendStorytext,
+body .mainPage .main-right .friendStory .recomandFriend,
+body .mainPage .main-right .recomandFriendAll .friendStorytext,
+body .mainPage .main-right .recomandFriendAll .recomandFriend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+body .mainPage .main-right .friendStory .main-rightfriendNameTime,
+body .mainPage .main-right .recomandFriendAll .main-rightfriendNameTime {
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;
+}
+body .mainPage .main-right .friendStory .main-rightfriendNameTime .main-rightfriendNameTimeP,
+body .mainPage .main-right .recomandFriendAll .main-rightfriendNameTime .main-rightfriendNameTimeP {
+  display: flex;
+  flex-direction: column;
+}
+body .mainPage .main-right .recomandFriendAll {
+  height: 220px;
+}
+body .mainPage .main-right .recomandFriendAll .main-rightRecomandFriendName {
+  display: flex;
+  margin: 10px 5px 10px 20px;
+}
+body .mainPage .main-right .recomandFriendAll .main-rightRecomandFriendName .main-rightRecomandFriendName_p {
+  display: flex;
+  flex-direction: column;
+}
+body .mainPage .main-right .recomandFriendAll .main-rightRecomandFriendName .recomandFriendProfilePic {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+body .mainPage .main-right .recomandFriendAll .main-rightRecomandFriendName .recomandFriendProfilePic .followButton {
+  background-color: white;
+  border: 0;
+  outline: 0;
+  color: rgb(36, 169, 221);
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+body .mainPage .main-right footer {
+  margin-left: 20px;
+}/*# sourceMappingURL=Main.css.map */

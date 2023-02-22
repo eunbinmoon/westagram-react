@@ -1,233 +1,244 @@
-* {
-  box-sizing: border-box;
+@import "../../styles/common.scss";
+@import "../../styles/mixin.scss";
 
-  body {
-    background-color: rgb(243, 243, 243);
-    margin: 0px 60px;
+.main {
+  p {
+    margin: 0px 5px;
+  }
 
-    p {
-      margin: 0px 5px;
+  i {
+    @include textStyle(25px, lighter);
+    width: 30px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(216, 216, 216);
+    background-color: white;
+    width: 1000px;
+    height: 70px;
+
+    .nav-leftTap,
+    .nav-centerTap {
+      flex: none;
     }
 
-    i {
-      font-size: 25px;
-      font-weight: lighter;
-      width: 30px;
+    .nav-centerTap {
+      position: relative;
+
+      .nav-centerTapGlass {
+        position: absolute;
+        top: 20%;
+        left: 55%;
+      }
     }
 
-    nav {
-      display: flex;
-      align-items: center;
+    .westagramtext {
+      font-size: 30px;
+      font-family: "Lobster", cursive;
+    }
+
+    .fa-magnifying-glass {
+      font-size: 20px;
+      color: black;
+    }
+    .search {
+      background-color: rgb(243, 243, 243);
       border: 2px solid rgb(216, 216, 216);
+      height: 30px;
+      text-align: center;
+      margin-left: 190px;
+      outline: none;
+    }
+
+    .nav-rightTap {
+      margin-left: auto;
+    }
+
+    .fa-compass,
+    .fa-heart,
+    .fa-user {
+      margin-left: 5px;
+      margin-right: 10px;
+    }
+  }
+
+  .mainPage {
+    display: flex;
+
+    .feeds {
       background-color: white;
-      width: 1000px;
-      height: 70px;
+      margin-top: 50px;
+      border: 2px solid rgb(216, 216, 216);
 
-      .nav-leftTap,
-      .nav-centerTap {
-        flex: none;
-      }
+      .article {
+        border-bottom: 2px solid rgb(216, 216, 216);
 
-      .westagramtext {
-        font-size: 30px;
-      }
+        .profile {
+          display: flex;
+          align-items: center;
 
-      .fa-magnifying-glass {
-        font-size: 20px;
-        color: black;
+          .daramId {
+            font-weight: bold;
+          }
+
+          .fa-ellipsis {
+            margin-left: auto;
+            margin-right: 10px;
+          }
+
+          .profilePhoto {
+            @include proFile;
+          }
+
+          .profilePhoto,
+          .daramId {
+            flex: none;
+            margin-right: 10px;
+          }
+        }
+        .profilePhoto {
+          margin: 8px 0px 8px 12px;
+        }
+        .pictureUnderTap {
+          display: flex;
+
+          .pictureUnderTapLeftSide {
+            flex: none;
+
+            .likeThisFeed {
+              background-color: white;
+              border: none;
+              padding: 0;
+            }
+          }
+          .feedsave {
+            margin-left: auto;
+          }
+
+          .howManyLike {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+
+            .howManyLikePicture {
+              width: 20px;
+              margin: auto 5px auto 10px;
+            }
+          }
+
+          .minBefore {
+            margin-bottom: 10px;
+          }
+        }
+
+        .howManyLike {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+
+          .howManyLikePicture {
+            width: 20px;
+            margin: auto 5px auto 10px;
+          }
+        }
       }
-      .search {
-        background-color: rgb(243, 243, 243);
-        border: 2px solid rgb(216, 216, 216);
-        height: 30px;
-        text-align: center;
-        margin-left: 190px;
+      .comment {
+        position: relative;
+        width: 450px;
+        height: 35px;
+        border: 0;
+        padding-left: 15px;
         outline: none;
       }
 
-      .nav-rightTap {
-        margin-left: auto;
-      }
-
-      .fa-compass,
-      .fa-heart,
-      .fa-user {
-        margin-left: 5px;
-        margin-right: 10px;
+      .commentbutton {
+        position: absolute;
+        width: 50px;
+        height: 35px;
+        border: 0;
+        outline: 0;
+        background-color: white;
+        color: rgb(24, 24, 248, 0.6);
+        font-size: 15px;
       }
     }
-
-    .main {
-      display: flex;
-
-      .feeds {
-        background-color: white;
+    .main-right {
+      .main-rightMyProfile {
+        display: flex;
+        align-items: center;
         margin-top: 50px;
-        border: 2px solid rgb(216, 216, 216);
+        margin-left: 20px;
 
-        .article {
-          border-bottom: 2px solid rgb(216, 216, 216);
-
-          .profile {
-            display: flex;
-            align-items: center;
-
-            .daramId {
-              font-weight: bold;
-            }
-
-            .profilePhoto {
-              margin: 8px 0px 8px 12px;
-            }
-
-            .profilePhoto {
-              width: 50px;
-              height: 50px;
-              border-radius: 100%;
-            }
-            .profilePhoto,
-            .daramId {
-              flex: none;
-              margin-right: 10px;
-
-              .fa-ellipsis {
-                margin-left: auto;
-                margin-right: 10px;
-              }
-            }
-          }
-
-          .pictureUnderTap {
-            display: flex;
-
-            .pictureUnderTapLeftSide {
-              flex: none;
-
-              .likeThisFeed {
-                background-color: white;
-                border: none;
-                padding: 0;
-              }
-
-              .feedsave {
-                margin-left: auto;
-              }
-            }
-            .howManyLike {
-              margin-top: 10px;
-
-              .howManyLikePicture {
-                width: 20px;
-                height: 20px;
-                margin-left: 10px;
-              }
-            }
-            .minBefore {
-              margin-bottom: 10px;
-            }
-          }
-        }
-        .comment {
-          position: relative;
-          width: 450px;
-          height: 35px;
-          border: 0;
-          padding-left: 15px;
-          outline: none;
-        }
-
-        .commentbutton {
-          position: absolute;
-          width: 50px;
-          height: 35px;
-          border: 0;
-          outline: 0;
-          background-color: white;
-          color: rgb(24, 24, 248, 0.6);
-          font-size: 15px;
+        .main-rightMyProfileImg {
+          width: 60px;
+          height: 60px;
+          border-radius: 100%;
+          margin-left: 12px;
         }
       }
-      .main-right {
-        .main-rightMyProfile {
+
+      .main-rightfriendPic {
+        @include proFile;
+      }
+
+      .friendStory,
+      .recomandFriendAll {
+        border: 2px solid rgb(216, 216, 216);
+        background-color: white;
+        width: 330px;
+        height: 250px;
+        margin: 8px 0px 15px 25px;
+        overflow: hidden;
+
+        .friendStorytext,
+        .recomandFriend {
           display: flex;
           align-items: center;
-          margin-top: 50px;
-          margin-left: 20px;
-
-          .main-rightMyProfileImg {
-            width: 60px;
-            height: 60px;
-            border-radius: 100%;
-            margin-left: 12px;
-          }
+          justify-content: space-between;
+          margin: 10px;
         }
 
-        .main-rightfriendPic {
-          width: 50px;
-          height: 50px;
-          border-radius: 100%;
-        }
+        .main-rightfriendNameTime {
+          display: flex;
+          align-items: center;
+          margin: 10px 20px;
 
-        .friendStory,
-        .recomandFriendAll {
-          border: 2px solid rgb(216, 216, 216);
-          background-color: white;
-          width: 330px;
-          height: 250px;
-          margin: 8px 0px 15px 25px;
-          overflow: hidden;
-
-          .friendStorytext,
-          .recomandFriend {
+          .main-rightfriendNameTimeP {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin: 10px;
+            flex-direction: column;
           }
+        }
+      }
+      .recomandFriendAll {
+        height: 220px;
 
-          .main-rightfriendNameTime {
+        .main-rightRecomandFriendName {
+          display: flex;
+          margin: 10px 5px 10px 20px;
+
+          .main-rightRecomandFriendName_p {
             display: flex;
-            align-items: center;
-            margin: 10px 20px;
+            flex-direction: column;
+          }
 
-            .main-rightfriendNameTimeP {
-              display: flex;
-              flex-direction: column;
-            }
+          .recomandFriendProfilePic {
+            @include proFile;
+          }
+          .followButton {
+            background-color: white;
+            border: 0;
+            outline: 0;
+            color: rgb(36, 169, 221);
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 5px;
           }
         }
-        .recomandFriendAll {
-          height: 220px;
-
-          .main-rightRecomandFriendName {
-            display: flex;
-            margin: 10px 5px 10px 20px;
-
-            .main-rightRecomandFriendName_p {
-              display: flex;
-              flex-direction: column;
-            }
-
-            .recomandFriendProfilePic {
-              width: 50px;
-              height: 50px;
-              border-radius: 100%;
-
-              .followButton {
-                background-color: white;
-                border: 0;
-                outline: 0;
-                color: rgb(36, 169, 221);
-                font-size: 16px;
-                font-weight: bold;
-                margin-left: 5px;
-              }
-            }
-          }
-        }
-        footer {
-          margin-left: 20px;
-        }
+      }
+      footer {
+        margin-left: 20px;
       }
     }
   }
