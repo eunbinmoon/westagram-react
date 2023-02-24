@@ -1,71 +1,75 @@
-@import "../../styles/common.scss";
-@import "../../styles/mixin.scss";
+@import '../../styles/common.scss';
+@import '../../styles/mixin.scss';
 
 .main {
+  border: 1px solid red;
   p {
     margin: 0px 5px;
   }
 
-  i {
-    @include textStyle(25px, lighter);
-    width: 30px;
-  }
-
-  nav {
+  #navCenter {
     display: flex;
-    align-items: center;
-    border: 2px solid rgb(216, 216, 216);
+    justify-content: center;
     background-color: white;
-    width: 1000px;
-    height: 70px;
 
-    .nav-leftTap,
-    .nav-centerTap {
-      flex: none;
-    }
+    nav {
+      @include flexRowCenter;
+      background-color: white;
+      width: 1000px;
+      height: 70px;
 
-    .nav-centerTap {
-      position: relative;
+      .nav-leftTap,
+      .nav-centerTap {
+        flex: none;
+      }
+      .nav-centerTap {
+        position: relative;
 
-      .nav-centerTapGlass {
-        position: absolute;
-        top: 20%;
-        left: 55%;
+        .nav-centerTapGlass {
+          position: absolute;
+          top: 20%;
+          left: 55%;
+        }
+      }
+
+      #westagramLogo {
+        font-size: 35px;
+        margin: 10px;
+      }
+
+      .westagramtext {
+        font-size: 30px;
+        font-family: 'Lobster', cursive;
+      }
+
+      .fa-magnifying-glass {
+        font-size: 20px;
+        color: black;
+      }
+      .search {
+        background-color: rgb(243, 243, 243);
+        border: 2px solid rgb(216, 216, 216);
+        height: 30px;
+        text-align: center;
+        margin-left: 190px;
+        outline: none;
+      }
+
+      .nav-rightTap {
+        margin-left: auto;
+      }
+
+      .fa-compass,
+      .fa-heart,
+      .fa-user {
+        margin-left: 5px;
+        margin-right: 10px;
       }
     }
-
-    .westagramtext {
-      font-size: 30px;
-      font-family: "Lobster", cursive;
-    }
-
-    .fa-magnifying-glass {
-      font-size: 20px;
-      color: black;
-    }
-    .search {
-      background-color: rgb(243, 243, 243);
-      border: 2px solid rgb(216, 216, 216);
-      height: 30px;
-      text-align: center;
-      margin-left: 190px;
-      outline: none;
-    }
-
-    .nav-rightTap {
-      margin-left: auto;
-    }
-
-    .fa-compass,
-    .fa-heart,
-    .fa-user {
-      margin-left: 5px;
-      margin-right: 10px;
-    }
   }
-
   .mainPage {
     display: flex;
+    justify-content: center;
 
     .feeds {
       background-color: white;
@@ -76,8 +80,7 @@
         border-bottom: 2px solid rgb(216, 216, 216);
 
         .profile {
-          display: flex;
-          align-items: center;
+          @include flexRowCenter;
 
           .daramId {
             font-weight: bold;
@@ -91,7 +94,6 @@
           .profilePhoto {
             @include proFile;
           }
-
           .profilePhoto,
           .daramId {
             flex: none;
@@ -102,7 +104,7 @@
           margin: 8px 0px 8px 12px;
         }
         .pictureUnderTap {
-          display: flex;
+          @include flexRowCenter;
 
           .pictureUnderTapLeftSide {
             flex: none;
@@ -117,9 +119,11 @@
             margin-left: auto;
           }
 
+          .minBefore {
+            margin-bottom: 10px;
+          }
           .howManyLike {
-            display: flex;
-            align-items: center;
+            @include flexRowCenter;
             margin-top: 10px;
 
             .howManyLikePicture {
@@ -127,15 +131,9 @@
               margin: auto 5px auto 10px;
             }
           }
-
-          .minBefore {
-            margin-bottom: 10px;
-          }
         }
-
         .howManyLike {
-          display: flex;
-          align-items: center;
+          @include flexRowCenter;
           margin-top: 10px;
 
           .howManyLikePicture {
@@ -157,17 +155,14 @@
         position: absolute;
         width: 50px;
         height: 35px;
-        border: 0;
-        outline: 0;
-        background-color: white;
         color: rgb(24, 24, 248, 0.6);
-        font-size: 15px;
+        @include plusbutton;
+        @include textStyle(16px, bold);
       }
     }
     .main-right {
       .main-rightMyProfile {
-        display: flex;
-        align-items: center;
+        @include flexRowCenter;
         margin-top: 50px;
         margin-left: 20px;
 
@@ -194,8 +189,7 @@
 
         .friendStorytext,
         .recomandFriend {
-          display: flex;
-          align-items: center;
+          @include flexRowCenter;
           justify-content: space-between;
           margin: 10px;
         }
@@ -227,13 +221,9 @@
             @include proFile;
           }
           .followButton {
-            background-color: white;
-            border: 0;
-            outline: 0;
             color: rgb(36, 169, 221);
-            font-size: 16px;
-            font-weight: bold;
-            margin-left: 5px;
+            @include plusbutton;
+            @include textStyle(16px, bold);
           }
         }
       }

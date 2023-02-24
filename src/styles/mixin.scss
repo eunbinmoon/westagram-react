@@ -5,6 +5,11 @@
   height: 100vh;
 }
 
+@mixin flexRowCenter {
+  display: flex;
+  align-items: center;
+}
+
 @mixin textStyle($font-size, $font-weight) {
   font-size: $font-size;
   font-weight: $font-weight;
@@ -14,4 +19,17 @@
   width: 50px;
   height: 50px;
   border-radius: 100%;
+  margin: 1px 3px;
+}
+
+@mixin plusbutton {
+  border: 0;
+  outline: 0;
+  background-color: white;
+  margin-left: 5px;
+}
+
+@mixin grayborder {
+  border: 2px solid rgb(216, 216, 216);
+  background-color: white;
 }

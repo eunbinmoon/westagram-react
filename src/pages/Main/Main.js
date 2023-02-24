@@ -4,24 +4,26 @@ import './Main.scss';
 const Main = () => {
   return (
     <div className="main">
-      <nav>
-        <div className="nav-leftTap">
-          <i className="fa-brands fa-instagram"></i>
-          <span className="westagramtext">| westagram </span>
-        </div>
-        <div className="nav-centerTap">
-          <input className="search" placeholder="검색" />
-          <i
-            className="fa-solid fa-magnifying-glass nav-centerTapGlass"
-            id="searchIcon"
-          ></i>
-        </div>
-        <div className="nav-rightTap">
-          <i className="fa-regular fa-compass"></i>
-          <i className="fa-regular fa-heart"></i>
-          <i className="fa-regular fa-user"></i>
-        </div>
-      </nav>
+      <div id="navCenter">
+        <nav>
+          <div className="nav-leftTap">
+            <i id="westagramLogo" className="fa-brands fa-instagram" />
+            <span className="westagramtext">| westagram </span>
+          </div>
+          <div className="nav-centerTap">
+            <input className="search" placeholder="검색" />
+            <i
+              className="fa-solid fa-magnifying-glass nav-centerTapGlass"
+              id="searchIcon"
+            />
+          </div>
+          <div className="nav-rightTap">
+            <i className="fa-regular fa-compass" />
+            <i className="fa-regular fa-heart" />
+            <i className="fa-regular fa-user" />
+          </div>
+        </nav>
+      </div>
       <div className="mainPage">
         <div className="feeds">
           <div className="article">
@@ -34,7 +36,7 @@ const Main = () => {
               <span className="daramId">
                 &nbsp;&nbsp;<b>172_daram</b>{' '}
               </span>
-              <i className="fa-solid fa-ellipsis"></i>
+              <i className="fa-solid fa-ellipsis" />
             </div>
 
             <img
@@ -45,13 +47,13 @@ const Main = () => {
             <div className="pictureUnderTap">
               <div className="pictureUnderTapLeftSide">
                 <button className="likeThisFeed">
-                  <i className="fa-regular fa-heart"></i>
+                  <i className="fa-regular fa-heart" />
                 </button>
-                <i className="fa-regular fa-comment feedComent"></i>
-                <i className="fa-solid fa-arrow-up-from-bracket feedShare"></i>
-                <i className="fa-regular fa-heart commentLikeI"></i>
+                <i className="fa-regular fa-comment feedComent" />
+                <i className="fa-solid fa-arrow-up-from-bracket feedShare" />
+                <i className="fa-regular fa-heart commentLikeI" />
               </div>
-              <i className="fa-regular fa-bookmark feedsave"></i>
+              <i className="fa-regular fa-bookmark feedsave" />
             </div>
             <div className="howManyLike">
               <img
@@ -78,7 +80,7 @@ const Main = () => {
               &nbsp;&nbsp;54분 전
             </p>
           </div>
-          <div id="commentpart"></div>
+          <div id="commentpart" />
           <input className="comment" type="text" placeholder="댓글 달기..." />
           <button className="commentbutton">
             <strong>게시</strong>
@@ -241,11 +243,11 @@ const Main = () => {
           <footer style={{ color: 'rgb(151, 150, 150)' }}>
             &nbsp; wnstagram 정보·지원·홍보 센터·API·
             <br />
-            &nbsp; &nbsp;&nbsp; 채용정보·개인정보처리방침·약관·
+            &nbsp; 채용정보·개인정보처리방침·약관·
             <br />
-            &nbsp;&nbsp; &nbsp; 디렉터리·프로필·해시태그·언어 <br />
+            &nbsp;디렉터리·프로필·해시태그·언어 <br />
             <br />
-            &nbsp;&nbsp; &nbsp; ⓒ 2019 WESTAGRAM
+            &nbsp;&nbsp; ⓒ 2019 WESTAGRAM
           </footer>
         </div>
       </div>
